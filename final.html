@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eric Vogel Final</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/final.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/final.js"></script>
+    
+    <section id='databases'>
+        <p>Find More Protein Info Here!</p>
+        <a href="https://www.ncbi.nlm.nih.gov/">NCBI </a>
+        <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">BLAST </a>
+        <a href="http://www.uniprot.org/">UniProt </a>
+        <a href="http://www.ebi.ac.uk/">EMBL </a>
+        <a href="https://genome.ucsc.edu/">UCSC </a>
+    </section>
+</head>
+<body id="main">
+    <!-- Protein search box -->
+    <div id="search" class="ui-widget">
+        <form name="gene_search" id="gene_search" action="">
+            <h1 id="Genbank" >Genbank Search</h1>
+            <input id="search_term" name="search_term" type="search" value="" autofocus="autofocus" placeholder="Lets Find a Protein" class="ui-autocomplete-input" autocomplete="off">
+            <input name="submit" type="submit" id="submit" value="submit">
+        </form>
+    </div>
+    <section id='results'>
+        <table id="database"><!-- JavaScript genbank info table --></table>
+        <br><p>
+            <span id='match_count'><!-- JavaScript protein match count --></span>
+        <br></p>
+        <div id="container" class="container">
+            <!-- JavaScript collapsible protein info table(s) -->
+        </div>
+    </body>
+</html>
